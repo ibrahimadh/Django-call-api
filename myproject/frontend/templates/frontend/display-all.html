@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Items</title>
+</head>
+<body>
+    <h1>All Items</h1>
+    <ul>
+        {% for content in data %}
+        <li>
+            id: {{ content.id }}
+            <br>
+            name: {{ content.name }}
+            <br>
+            description: {{ content.description }}
+        </li>
+        <br>
+        {% endfor %}
+
+        <!-- {{dataList}} -->
+
+    </ul>
+
+
+
+</body>
+</html>
